@@ -170,7 +170,7 @@ class PostsController extends Controller
 
         //find the post
         $post = Post::find($request->post_id);
-
+        dd($request);
         $oldImage = public_path() . '/storage/images/posts_images/'. $post->image_url;
 
         if(file_exists($oldImage)){

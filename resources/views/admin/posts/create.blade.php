@@ -138,7 +138,7 @@
             </div>
         </footer>
 
-    </div>
+     </div>
     <!-- /.content-wrapper -->
 
     </div>
