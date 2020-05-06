@@ -76,8 +76,8 @@
             <div class="modal-body">Select "delete" If you realy want to delete this post.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <form method="POST" action="/posts/">
-                        @method('GET')
+                    <form method="post" action="/posts/">
+                        @method('PATCH') 
                         @csrf
                         <input type="hidden" id="post_id" name="post_id" value="">
                         <a class="btn btn-primary" onclick="$(this).closest('form').submit();">Delete</a>
